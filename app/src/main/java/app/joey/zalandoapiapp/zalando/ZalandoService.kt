@@ -1,6 +1,7 @@
 package app.joey.zalandoapiapp.zalando
 
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 

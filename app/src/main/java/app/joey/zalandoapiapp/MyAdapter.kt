@@ -15,6 +15,7 @@ class ArticleClickListener(val article: JsonArticle?): View.OnClickListener {
         val intent = Intent(v!!.context, DetailArticleActivity::class.java)
         intent.putExtra("articleName", article?.name)
         intent.putExtra("articleImageUrl", article?.media?.images?.get(0)?.largeHdUrl)
+        intent.putExtra("articlePrice", article?.units?.get(0)?.price?.formatted)
         v.context.startActivity(intent)
     }
 

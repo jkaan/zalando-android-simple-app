@@ -26,6 +26,9 @@ class DetailArticleActivity : AppCompatActivity() {
         val textView = findViewById(R.id.article_name) as TextView
         textView.text = intent.extras.getString("articleName")
 
+        val priceTextView = findViewById(R.id.article_price) as TextView
+        priceTextView.text = intent.extras.getString("articlePrice")
+
         // Show the Up button in the action bar.
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
